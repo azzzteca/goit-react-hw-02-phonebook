@@ -1,12 +1,15 @@
 import s from './Contacts.module.css';
 
 export function Contacts({ info }) {
+  console.log(info);
+
   return (
     <div>
       <h2>Contacts</h2>
       <ul className={s.contactList}>
-        {/* {info.contacts.length } */}
-        <li>Первый товарисдч</li>
+        {/* {info.map(contact => (
+          <li>{contact.name}</li>
+        ))} */}
       </ul>
     </div>
   );

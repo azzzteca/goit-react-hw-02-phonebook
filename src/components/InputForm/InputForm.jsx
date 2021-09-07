@@ -1,4 +1,4 @@
-// import s from './InputForm.module.css';
+import s from './InputForm.module.css';
 
 export function InputForm({ addContact }) {
   return (
