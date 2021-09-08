@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import s from './InputForm.module.css';
 
 export function InputForm({ addContact }) {
@@ -29,3 +30,7 @@ export function InputForm({ addContact }) {
     </form>
   );
 }
+
+InputForm.propTypes = {
+  addContact: PropTypes.func.isRequired,
+};
