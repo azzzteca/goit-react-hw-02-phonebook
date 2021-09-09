@@ -67,12 +67,15 @@ export class App extends Component {
       <div className={s.app}>
         <Section title={'Phonebook'}>
           <InputForm addContact={this.handleAddContact} />
-          <ContactList />
-          <Filter
+          <ContactList
             info={this.state}
-            filterContact={this.handleFilterContact}
             deleteContact={this.handleDeleteContact}
-          />
+          >
+            <Filter
+              info={this.state}
+              filterContact={this.handleFilterContact}
+            />
+          </ContactList>
         </Section>
       </div>
     );
