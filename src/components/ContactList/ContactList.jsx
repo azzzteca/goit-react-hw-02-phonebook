@@ -22,6 +22,9 @@ export function ContactList({ info, deleteContact, children }) {
               .map(contact => (
                 <li key={contact.id}>
                   {contact.name} {contact.number}
+                  <button type="button" id={contact.id} onClick={deleteContact}>
+                    Delete
+                  </button>
                 </li>
               ))}
       </ul>
